@@ -3,6 +3,10 @@
 \usepackage{geometry}
 \usepackage{tabularx}
 \usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+
 
 \geometry{
     top = 0.5 cm,
@@ -13,12 +17,34 @@
 
 % notazione Densa per le radici a denominatore
 % (ovviamente va usato in un math environment)
-\newcommand{\ngrt}[2][ ]{
+\newcommand{\ngrt}[2][]{
     \sqrt[-#1]{#2}
+}
+
+% modo facile per scrivere bra e ket di cose
+% (\left e \right servono per l'autosize delle parentesi)
+\newcommand{\bra}[1]{
+    \left\langle #1 \right|
+}
+\newcommand{\ket}[1]{
+    \left| #1 \right\rangle
+}
+\newcommand{\bkprod}[2]{
+    \left\langle #1 \right| \left. #2 \right\rangle
 }
 
 \begin{document}
 
 Notazione: $\displaystyle \ngrt{x} := \frac{1}{\sqrt{x}} $
+
+\section*{Stati}
+
+\begin{tabular}{cccc}
+    Principio 1 & Funzione d'onda e densità di probabilità & Trasformata di Fourier & Basi generalizzate \\
+    $\mathcal{S} \mapsto \mathcal{H} $ & $P(x) = \displaystyle \frac{|\psi(x)|^2}{||\psi(x)||^2} $ & $\widetilde{\psi}(p) = \displaystyle \ngrt{2\pi\hbar}\int\mathrm{d}x\psi(x)e^{-\frac{ipx}{\hbar}} $ & $\ket{x} = \xi_x(x) = \delta(x-x_0) $ \\
+    $\Sigma \mapsto \hat{\psi} := \{\lambda\ket{\psi} |\, \lambda\in\mathbb{C}\backslash\{0\} \} $ & $P(x) \geq 0,\quad \displaystyle \int \mathrm{d}x P(x) = 1 $ & $P(p) = \displaystyle \frac{|\psi(p)|^2}{||\psi(p)||^2} $ & $\ket{p} = v_p (x) = \ngrt{2\pi\hbar}\,e^{\frac{ipx}{\hbar}} $ \\
+     &  &  & $\bkprod{x_0}{x_0'} = \delta(x_0 - x_0') $ \\
+     &  &  & $\bkprod{p_0}{p_0'} = \delta(p_0 - p_0') $
+\end{tabular}
 
 \end{document}
