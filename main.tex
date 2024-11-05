@@ -11,8 +11,8 @@
 \geometry{
     top = 0.5 cm,
     bottom = 0.5 cm,
-    left = 0.5 cm,
-    right = 0.5 cm
+    left = 0.3 cm,
+    right = 0 cm
 }
 
 % notazione Densa per le radici a denominatore
@@ -49,11 +49,11 @@ Notazione: $\displaystyle \ngrt{x} := \frac{1}{\sqrt{x}} $
 
 \section*{Osservabili}
 
-\begin{tabular}{ccccc}
-    Posizione e impulso & Principio 2 & Principio 3 &  &  \\
-    $X\psi(x) = x\psi(x) $ & $\mathcal{A}\mapsto A $ & $A\ket{a} = a\ket{a} $ &  &  \\
-    $P\psi(x) = \displaystyle -i\hbar\frac{\mathrm{d}\psi(x)}{\mathrm{d}x} $ & $\displaystyle\langle \mathcal{A}\rangle_\Sigma = \frac{\bra{\psi}A\ket{\psi}}{\bkprod{\psi}{\psi}} $ & $\sigma(\mathcal{A}) = \sigma(A) $ &  &  \\
-    $[X,P] = i\hbar$ & $\Delta A = \sqrt{\langle A^2 \rangle - \langle A \rangle^2} $
+\begin{tabular}{cccccc}
+    Posizione e impulso & Principio 2 & Principio 3 & \multicolumn{3}{c}{Principio 4} \\
+    $X\psi(x) = x\psi(x) $ & $\mathcal{A}\mapsto A $ & $A\ket{a} = a\ket{a} $ & $w(a_k) = \displaystyle \frac{\left|\bkprod{a_k}{\psi} \right|^2}{||\psi||^2} $ & $w(a_k) = \displaystyle \sum_{i=1}^{d_k}\frac{\left|\bkprod{a_{k,i}}{\psi} \right|^2}{||\psi||^2} $ & $\mathrm{d}w(a) = \rho(a)\mathrm{d}a = \displaystyle \frac{\left| \bkprod{a}{\psi} \right|^2}{||\psi ||^2}$ \\
+    $P\psi(x) = \displaystyle -i\hbar\frac{\mathrm{d}\psi(x)}{\mathrm{d}x} $ & $\displaystyle\langle \mathcal{A}\rangle_\Sigma = \frac{\bra{\psi}A\ket{\psi}}{\bkprod{\psi}{\psi}} $ & $\sigma(\mathcal{A}) = \sigma(A) $ & $\displaystyle \ket{\psi} = \sum_{k=1}^N c_k\ket{a_k} $ & $\displaystyle \ket{\psi} = \sum_{k=1}^N\sum_{i=1}^{d_k} c^i_k\ket{a_k} $ & $\ket{\psi} = \displaystyle \int\mathrm{d}a\, c(a)\ket{a} $ \\
+    $[X,P] = i\hbar$ & $\Delta A = \sqrt{\langle A^2 \rangle - \langle A \rangle^2} $ &  & $\displaystyle w(a_k) = \frac{\left|c_k\right|^2}{||\psi||^2}$ & $\displaystyle w(a_k) = \sum_{i=1}^{d_k} \frac{\left|c^i_k\right|^2}{||\psi||^2}$ & $\rho(a) = \displaystyle \frac{\left| c(a) \right|^2}{||\psi||^2} $
 \end{tabular}
 
 \newpage

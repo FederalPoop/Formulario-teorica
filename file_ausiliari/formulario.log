@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.29)  5 NOV 2024 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.29)  5 NOV 2024 15:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -209,14 +209,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(14.22636pt, 585.84227pt, 14.22636pt)
+* h-part:(L,W,R)=(8.5359pt, 605.7591pt, 0.0pt)
 * v-part:(T,H,B)=(14.22636pt, 766.51726pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=585.84227pt
+* \textwidth=605.7591pt
 * \textheight=766.51726pt
-* \oddsidemargin=-58.04362pt
-* \evensidemargin=-58.04362pt
+* \oddsidemargin=-63.73409pt
+* \evensidemargin=-63.73409pt
 * \topmargin=-95.04362pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -242,12 +242,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (5.09566pt too wide) in paragraph at lines 42--49
-[] 
- []
-
-[1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (file_ausiliari/formulario.aux)
  ***********
@@ -258,13 +253,13 @@ L3 programming layer <2024-01-22>
 Here is how much of TeX's memory you used:
  3288 strings out of 474222
  48120 string characters out of 5748732
- 1931975 words of memory out of 5000000
+ 1936975 words of memory out of 5000000
  25525 multiletter control sequences out of 15000+600000
  560373 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,65p,389b,127s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,12n,65p,516b,127s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb>
-Output written on file_ausiliari/formulario.pdf (1 page, 108045 bytes).
+Output written on file_ausiliari/formulario.pdf (1 page, 111859 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
