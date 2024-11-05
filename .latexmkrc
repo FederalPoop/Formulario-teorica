@@ -1,3 +1,3 @@
-$aux_dir = 'output';
+$aux_dir = 'file_ausiliari';
 $out_dir = '.';
-$synctexopt = "-synctex=1 -output-directory=output";
+$synctexopt = "-synctex=1 -output-directory=file_ausiliari";
