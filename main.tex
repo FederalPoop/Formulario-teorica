@@ -6,13 +6,13 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{textcomp}
-
+\usepackage{dsfont}
 
 \geometry{
-    top = 0.5 cm,
+    top = 0.2 cm,
     bottom = 0.5 cm,
     left = 0.3 cm,
-    right = 0 cm
+    right = 0.1 cm
 }
 
 % notazione Densa per le radici a denominatore
@@ -31,6 +31,11 @@
 }
 \newcommand{\bkprod}[2]{
     \left\langle #1 | #2 \right\rangle
+}
+
+% operatore identità (a quanto pare \mathbb{1} non dà quello che ci si aspetterebbe)
+\newcommand{\id}{
+    \mathds{1}
 }
 
 \begin{document}
@@ -62,6 +67,37 @@ Notazione: $\displaystyle \ngrt{x} := \frac{1}{\sqrt{x}} $
     Definizione di proiettore $(P, \mathcal{D}(P))$ & Principio 6 & Osservabili compatibili \\
     $P$ è proiettore $\Leftrightarrow P^\dagger = P \wedge P^2 = P $ & $\ket{\psi}\rightarrow\ket{\psi'} = \displaystyle \frac{P_{a_k}\ket{\psi}}{\sqrt{\bra{\psi}P_{a_k}\ket{\psi}}} $ & $\mathcal{A,B} $ compatibili $\Leftrightarrow [A,B] = 0 $ \\
     $P_q = \displaystyle \sum_i \ket{\varphi_i}\bra{\varphi_i} $, $\{\ket{\varphi_i}\} $ base ON di $\mathcal{H}_q$ &  & $\mathcal{A,B} $ compatibili $\Leftrightarrow $ hanno una base di autovettori comuni
+\end{tabular}
+
+\noindent Per trovare una base di autovettori comuni (sapendo già che gli operatori commutano, e se entrambi hanno degenerazioni):
+\begin{enumerate}
+    \item Trovo autovalori e autovettori di $A$ e $B$;
+    \item Autovettori associati ad autovalori \textbf{non} degeneri sono automaticamente autovettori comuni;
+    \item Per autovettori associati ad autovalori degeneri, faccio la prova (applico $B$ a un autovettore degenere di $A$);
+    \item Se è anche autovettore di $B$, sono a posto (è autovettore comune);
+    \item Se non lo è:
+    \begin{enumerate}
+        \item Definisco un nuovo vettore come combinazione lineare degli autovettori della base dell'autospazio degenere in questione;
+        \item Impongo che questo nuovo vettore sia autovettore di $B$;
+        \item Risolvo il sistema di equazioni trovando i coefficienti della combinazione lineare;
+        \item Per come è stato definito, questo vettore è autovettore sia di $A$ che di $B$.
+    \end{enumerate}
+\end{enumerate}
+
+\noindent Per capire se un insieme di osservabili compatibili costituisce un ICOC:
+\begin{enumerate}
+    \item Se gli osservabili sono compatibili, esiste una base comune di autovettori;
+    \item A ogni autovettore, associo una \textit{label} costituita da una lista dei corrispondenti autovalori per ogni osservabile;
+    \item Se \textbf{ogni} \textit{label} è unica, l'insieme è un ICOC.
+\end{enumerate}
+
+\section*{Evoluzione temporale e trasformazioni unitarie}
+
+\begin{tabular}{ccccc}
+    Equazione di Schrödinger & Trasformazioni unitarie & \multicolumn{2}{c}{Operatore di evoluzione temporale} & Sistema conservativo \\
+    $\displaystyle -i\hbar\frac{\mathrm{d}}{\mathrm{d}t}\ket{\psi(t)} = H(t)\ket{\psi(t)} $ & $\begin{cases}\ket{\psi} &\mapsto \ket{\psi'} = U\ket{\psi} \\ A &\mapsto A' = UAU^\dagger \end{cases}$ & $U(t,t_0)\ket{\psi(t_0)} = \ket{\psi(t)} $ & $U(t+\mathrm{d}t,t) = \id - \displaystyle \frac{i}{\hbar}H(t)\mathrm{d}t $ & $\displaystyle U(t,t_0) = e^{-\frac{i}{\hbar}H(t-t_0)} $ \\
+    Visuale di Schrödinger & Visuale di Heisenberg &  & Equazione di heisenberg &  \\
+    $\begin{cases}\ket{\psi(t)}_S = U(\Delta t) \ket{\psi(t_0)}_S \\ A_S (t) = A_S (0) \end{cases} $ & \multicolumn{2}{l}{$\begin{cases}\ket{\psi(t)}_H = \ket{\psi(t_0)}_H \\ A_H(t) = U^\dagger(\Delta t)A_H(t_0)U(\Delta t) \end{cases} $} & $\displaystyle -i\hbar\frac{\mathrm{d}}{\mathrm{d}t}A_H(t) = [A_H, H] $
 \end{tabular}
 
 \newpage
