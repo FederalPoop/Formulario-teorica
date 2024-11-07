@@ -42,14 +42,14 @@
 
 \begin{document}
 
-Notazione: $\displaystyle \ngrt{x} := \frac{1}{\sqrt{x}} $
+Notazione: $ \ngrt{x} := \frac{1}{\sqrt{x}} $
 
 \section*{Stati}
 
 \begin{tabular}{cccc}
     Principio 1 & Funzione d'onda e densità di probabilità & Trasformata di Fourier & Basi generalizzate \\
-    $\mathcal{S} \mapsto \mathcal{H} $ & $P(x) = \displaystyle \frac{|\psi(x)|^2}{||\psi(x)||^2} $ & $\widetilde{\psi}(p) = \displaystyle \ngrt{2\pi\hbar}\int\mathrm{d}x\psi(x)e^{-\frac{ipx}{\hbar}} $ & $\ket{x} = \xi_x(x) = \delta(x-x_0) $ \\
-    $\Sigma \mapsto \hat{\psi} := \{\lambda\ket{\psi} |\, \lambda\in\mathbb{C}\backslash\{0\} \} $ & $P(x) \geq 0,\quad \displaystyle \int \mathrm{d}x P(x) = 1 $ & $P(p) = \displaystyle \frac{|\psi(p)|^2}{||\psi(p)||^2} $ & $\ket{p} = v_p (x) = \ngrt{2\pi\hbar}\,e^{\frac{ipx}{\hbar}} $ \\
+    $\mathcal{S} \mapsto \mathcal{H} $ & $P(x) =  \frac{|\psi(x)|^2}{||\psi(x)||^2} $ & $\widetilde{\psi}(p) =  \ngrt{2\pi\hbar}\int\mathrm{d}x\psi(x)e^{-\frac{ipx}{\hbar}} $ & $\ket{x} = \xi_x(x) = \delta(x-x_0) $ \\
+    $\Sigma \mapsto \hat{\psi} := \{\lambda\ket{\psi} |\, \lambda\in\mathbb{C}\backslash\{0\} \} $ & $P(x) \geq 0,\quad  \int \mathrm{d}x P(x) = 1 $ & $P(p) =  \frac{|\psi(p)|^2}{||\psi(p)||^2} $ & $\ket{p} = v_p (x) = \ngrt{2\pi\hbar}\,e^{\frac{ipx}{\hbar}} $ \\
      &  &  & $\bkprod{x_0}{x_0'} = \delta(x_0 - x_0') $ \\
      &  &  & $\bkprod{p_0}{p_0'} = \delta(p_0 - p_0') $
 \end{tabular}
@@ -58,17 +58,17 @@ Notazione: $\displaystyle \ngrt{x} := \frac{1}{\sqrt{x}} $
 
 \begin{tabular}{cccccc}
     Posizione e impulso & Principio 2 & Principio 3 & \multicolumn{3}{c}{Principio 4} \\
-    $X\psi(x) = x\psi(x) $ & $\mathcal{A}\mapsto A $ & $A\ket{a} = a\ket{a} $ & $w(a_k) = \displaystyle \frac{\left|\bkprod{a_k}{\psi} \right|^2}{||\psi||^2} $ & $w(a_k) = \displaystyle \sum_{i=1}^{d_k}\frac{\left|\bkprod{a_{k,i}}{\psi} \right|^2}{||\psi||^2} $ & $\mathrm{d}w(a) = \rho(a)\mathrm{d}a = \displaystyle \frac{\left| \bkprod{a}{\psi} \right|^2}{||\psi ||^2}$ \\
-    $P\psi(x) = \displaystyle -i\hbar\frac{\mathrm{d}\psi(x)}{\mathrm{d}x} $ & $\displaystyle\langle \mathcal{A}\rangle_\Sigma = \frac{\bra{\psi}A\ket{\psi}}{\bkprod{\psi}{\psi}} $ & $\sigma(\mathcal{A}) = \sigma(A) $ & $\displaystyle \ket{\psi} = \sum_{k=1}^N c_k\ket{a_k} $ & $\displaystyle \ket{\psi} = \sum_{k=1}^N\sum_{i=1}^{d_k} c^i_k\ket{a_k} $ & $\ket{\psi} = \displaystyle \int\mathrm{d}a\, c(a)\ket{a} $ \\
-    $[X,P] = i\hbar$ & $\Delta A = \sqrt{\langle A^2 \rangle - \langle A \rangle^2} $ &  & $\displaystyle w(a_k) = \frac{\left|c_k\right|^2}{||\psi||^2}$ & $\displaystyle w(a_k) = \sum_{i=1}^{d_k} \frac{\left|c^i_k\right|^2}{||\psi||^2}$ & $\rho(a) = \displaystyle \frac{\left| c(a) \right|^2}{||\psi||^2} $
+    $X\psi(x) = x\psi(x) $ & $\mathcal{A}\mapsto A $ & $A\ket{a} = a\ket{a} $ & $w(a_k) =  \frac{\left|\bkprod{a_k}{\psi} \right|^2}{||\psi||^2} $ & $w(a_k) =  \sum_{i=1}^{d_k}\frac{\left|\bkprod{a_{k,i}}{\psi} \right|^2}{||\psi||^2} $ & $\mathrm{d}w(a) = \rho(a)\mathrm{d}a =  \frac{\left| \bkprod{a}{\psi} \right|^2}{||\psi ||^2}$ \\
+    $P\psi(x) =  -i\hbar\frac{\mathrm{d}\psi(x)}{\mathrm{d}x} $ & $\langle \mathcal{A}\rangle_\Sigma = \frac{\bra{\psi}A\ket{\psi}}{\bkprod{\psi}{\psi}} $ & $\sigma(\mathcal{A}) = \sigma(A) $ & $ \ket{\psi} = \sum_{k=1}^N c_k\ket{a_k} $ & $ \ket{\psi} = \sum_{k=1}^N\sum_{i=1}^{d_k} c^i_k\ket{a_k} $ & $\ket{\psi} =  \int\mathrm{d}a\, c(a)\ket{a} $ \\
+    $[X,P] = i\hbar$ & $\Delta A = \sqrt{\langle A^2 \rangle - \langle A \rangle^2} $ &  & $ w(a_k) = \frac{\left|c_k\right|^2}{||\psi||^2}$ & $ w(a_k) = \sum_{i=1}^{d_k} \frac{\left|c^i_k\right|^2}{||\psi||^2}$ & $\rho(a) =  \frac{\left| c(a) \right|^2}{||\psi||^2} $
 \end{tabular}
 
 \section*{Proiettori e misure}
 
 \begin{tabular}{ccccc}
     Definizione di proiettore $(P, \mathcal{D}(P))$ & Principio 6 & Osservabili compatibili \\
-    $P$ è proiettore $\Leftrightarrow P^\dagger = P \wedge P^2 = P $ & $\ket{\psi}\rightarrow\ket{\psi'} = \displaystyle \frac{P_{a_k}\ket{\psi}}{\sqrt{\bra{\psi}P_{a_k}\ket{\psi}}} $ & $\mathcal{A,B} $ compatibili $\Leftrightarrow [A,B] = 0 $ \\
-    $P_q = \displaystyle \sum_i \ket{\varphi_i}\bra{\varphi_i} $, $\{\ket{\varphi_i}\} $ base ON di $\mathcal{H}_q$ &  & $\mathcal{A,B} $ compatibili $\Leftrightarrow $ hanno una base di autovettori comuni
+    $P$ è proiettore $\Leftrightarrow P^\dagger = P \wedge P^2 = P $ & $\ket{\psi}\rightarrow\ket{\psi'} =  \frac{P_{a_k}\ket{\psi}}{\sqrt{\bra{\psi}P_{a_k}\ket{\psi}}} $ & $\mathcal{A,B} $ compatibili $\Leftrightarrow [A,B] = 0 $ \\
+    $P_q =  \sum_i \ket{\varphi_i}\bra{\varphi_i} $, $\{\ket{\varphi_i}\} $ base ON di $\mathcal{H}_q$ &  & $\mathcal{A,B} $ compatibili $\Leftrightarrow $ hanno una base di autovettori comuni
 \end{tabular}
 
 \noindent Per trovare una base di autovettori comuni (sapendo già che gli operatori commutano, e se entrambi hanno degenerazioni):
@@ -97,12 +97,10 @@ Notazione: $\displaystyle \ngrt{x} := \frac{1}{\sqrt{x}} $
 
 \begin{tabular}{ccccc}
     Equazione di Schrödinger & Trasformazioni unitarie & \multicolumn{2}{c}{Operatore di evoluzione temporale} & Sistema conservativo \\
-    $\displaystyle -i\hbar\frac{\mathrm{d}}{\mathrm{d}t}\ket{\psi(t)} = H(t)\ket{\psi(t)} $ & $\begin{cases}\ket{\psi} &\mapsto \ket{\psi'} = U\ket{\psi} \\ A &\mapsto A' = UAU^\dagger \end{cases}$ & $U(t,t_0)\ket{\psi(t_0)} = \ket{\psi(t)} $ & $U(t+\mathrm{d}t,t) = \id - \displaystyle \frac{i}{\hbar}H(t)\mathrm{d}t $ & $\displaystyle U(t,t_0) = e^{-\frac{i}{\hbar}H(t-t_0)} $ \\
+    $ -i\hbar\frac{\mathrm{d}}{\mathrm{d}t}\ket{\psi(t)} = H(t)\ket{\psi(t)} $ & $\begin{cases}\ket{\psi} &\mapsto \ket{\psi'} = U\ket{\psi} \\ A &\mapsto A' = UAU^\dagger \end{cases}$ & $U(t,t_0)\ket{\psi(t_0)} = \ket{\psi(t)} $ & $U(t+\mathrm{d}t,t) = \id -  \frac{i}{\hbar}H(t)\mathrm{d}t $ & $ U(t,t_0) = e^{-\frac{i}{\hbar}H(t-t_0)} $ \\
     Visuale di Schrödinger & Visuale di Heisenberg &  & Equazione di heisenberg &  \\
-    $\begin{cases}\ket{\psi(t)}_S = U(\Delta t) \ket{\psi(t_0)}_S \\ A_S (t) = A_S (0) \end{cases} $ & \multicolumn{2}{l}{$\begin{cases}\ket{\psi(t)}_H = \ket{\psi(t_0)}_H \\ A_H(t) = U^\dagger(\Delta t)A_H(t_0)U(\Delta t) \end{cases} $} & $\displaystyle -i\hbar\frac{\mathrm{d}}{\mathrm{d}t}A_H(t) = [A_H, H] $
+    $\begin{cases}\ket{\psi(t)}_S = U(\Delta t) \ket{\psi(t_0)}_S \\ A_S (t) = A_S (0) \end{cases} $ & \multicolumn{2}{l}{$\begin{cases}\ket{\psi(t)}_H = \ket{\psi(t_0)}_H \\ A_H(t) = U^\dagger(\Delta t)A_H(t_0)U(\Delta t) \end{cases} $} & $ -i\hbar\frac{\mathrm{d}}{\mathrm{d}t}A_H(t) = [A_H, H] $
 \end{tabular}
-
-%\newpage
 
 \section*{Matrice densità}
 \begin{tabular}{ccccc}
