@@ -20,7 +20,7 @@
 % notazione Densa per le radici a denominatore
 % (ovviamente va usato in un math environment)
 \newcommand{\ngrt}[2][]{
-    \sqrt[-#1]{#2}
+    \sqrt[\mathbf{-}#1]{#2}
 }
 
 % modo facile per scrivere bra e ket di cose
@@ -103,10 +103,20 @@ Notazione: $ \ngrt{x} := \frac{1}{\sqrt{x}} $
 \end{tabular}
 
 \section*{Matrice densità}
+
 \begin{tabular}{ccccc}
     Stato puro & Stato misto & \multicolumn{2}{c}{Proprietà (stato generico)} & \textbf{SOLO PER STATI PURI} \\
     $\rho(t) = \ket{\psi(t)}\bra{\psi(t)} $ & $\{\ket{\psi_k(t)}\},\ p_k $ & $\rho^\dagger(t) = \rho(t) $ & $\langle A \rangle_\psi(t) = Tr(\rho(t) A) $ & $\rho^2(t) = \rho(t) $ \\
     $\rho_{pn}(t) = \bra{u_p}\rho(t)\ket{u_n} = \bar{c}_n(t)c_p(t) $ & $\rho(t) = \sum_k p_k\rho_k(t) $ & $Tr(\rho(t)) = 1 $ & $i\hbar\frac{\mathrm{d}\rho(t)}{\mathrm{d}t} = [H(t), \rho(t)] $ & $Tr(\rho^2(t)) = 1 $
+\end{tabular}
+
+\section*{Oscillatore armonico}
+
+\begin{tabular}{ccccc}
+    Problema agli autovalori & \multicolumn{3}{c}{Definizioni utili} &  \\
+    $H\ket{\psi} = E\ket{\psi} $ & $\hat{X} := \sqrt{\frac{m\omega}{\hbar}}X $ & $a = \ngrt{2}(\hat{X}+i\hat{P}) $ &  \\
+    $H = \frac{P^2}{2m} + \frac{1}{2}m\omega^2X^2 $ & $\hat{P} := \ngrt{m\hbar\omega}P $ & $a^\dagger = \ngrt{2}(\hat{X}-i\hat{P}) $ \\
+     & $\hat{H} = \hbar\omega H = \frac{1}{2}(\hat{X}^2 + \hat{P}^2) $ & $N = a^\dagger a $
 \end{tabular}
 
 \newpage
