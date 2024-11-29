@@ -11,7 +11,7 @@
 \usepackage{dsfont}
 
 \geometry{
-    top = 0.2 cm,
+    top = 0.1 cm,
     bottom = 0.5 cm,
     left = 0.3 cm,
     right = 0.1 cm
@@ -46,13 +46,13 @@
 \noindent Notazione: $ \ngrt{x} := \frac{1}{\sqrt{x}} $
 
 \noindent
-\begin{tabular}{ccccc}
-    \multicolumn{2}{c|}{Basi generalizzate} & \multicolumn{3}{c}{Esiti misure e probabilità (Principio 4)} \\
-    $\ket{x} = \xi_x(x) = \delta(x-x_0) $ & \multicolumn{1}{c|}{$\bkprod{x_0}{x_0'} = \delta(x_0 - x_0') $} & $w(a_k) = \frac{\left|\bkprod{a_k}{\psi} \right|^2}{||\psi||^2} $ & $w(a_k) =  \sum_{i=1}^{d_k}\frac{\left|\bkprod{a_{k,i}}{\psi} \right|^2}{||\psi||^2} $ & $\mathrm{d}w(a) = \rho(a)\mathrm{d}a =  \frac{\left| \bkprod{a}{\psi} \right|^2}{||\psi ||^2}$ \\
-    $\ket{p} = v_p (x) = \ngrt{2\pi\hbar}\,e^{\frac{ipx}{\hbar}} $ & \multicolumn{1}{c|}{$\bkprod{p_0}{p_0'} = \delta(p_0 - p_0') $} & $ \ket{\psi} = \sum_{k=1}^N c_k\ket{a_k} $ & $ \ket{\psi} = \sum_{k=1}^N\sum_{i=1}^{d_k} c^i_k\ket{a_k} $ & $\ket{\psi} =  \int\mathrm{d}a\, c(a)\ket{a} $ \\
-    \cline{1-2}
-    Principio 6 & \multicolumn{1}{c|}{$\ket{\psi}\rightarrow\ket{\psi'} =  \frac{P_{a_k}\ket{\psi}}{\sqrt{\bra{\psi}P_{a_k}\ket{\psi}}} $} & $ w(a_k) = \frac{\left|c_k\right|^2}{||\psi||^2}$ & $ w(a_k) = \sum_{i=1}^{d_k} \frac{\left|c^i_k\right|^2}{||\psi||^2}$ & $\rho(a) =  \frac{\left| c(a) \right|^2}{||\psi||^2} $ \\
-    \hline
+\begin{tabular}{cccccc}
+    \multicolumn{2}{c|}{Basi generalizzate} & \multicolumn{3}{c|}{Esiti misure e probabilità (Principio 4)} \\
+    $\ket{x} = \xi_x(x) = \delta(x-x_0) $ & \multicolumn{1}{c|}{$\bkprod{x_0}{x_0'} = \delta(x_0 - x_0') $} & $w(a_k) = \frac{\left|\bkprod{a_k}{\psi} \right|^2}{||\psi||^2} $ & $w(a_k) =  \sum_{i=1}^{d_k}\frac{\left|\bkprod{a_{k,i}}{\psi} \right|^2}{||\psi||^2} $ & \multicolumn{1}{c|}{$\mathrm{d}w(a) = \rho(a)\mathrm{d}a =  \frac{\left| \bkprod{a}{\psi} \right|^2}{||\psi ||^2}$} \\
+    $\ket{p} = v_p (x) = \ngrt{2\pi\hbar}\,e^{\frac{ipx}{\hbar}} $ & \multicolumn{1}{c|}{$\bkprod{p_0}{p_0'} = \delta(p_0 - p_0') $} & $ \ket{\psi} = \sum_{k=1}^N c_k\ket{a_k} $ & $ \ket{\psi} = \sum_{k=1}^N\sum_{i=1}^{d_k} c^i_k\ket{a_k} $ & \multicolumn{1}{c|}{$\ket{\psi} =  \int\mathrm{d}a\, c(a)\ket{a} $} \\
+    \cline{1-2} \cline{6-6}
+    Principio 6 & \multicolumn{1}{c|}{$\ket{\psi}\rightarrow\ket{\psi'} =  \frac{P_{a_k}\ket{\psi}}{\sqrt{\bra{\psi}P_{a_k}\ket{\psi}}} $} & $ w(a_k) = \frac{\left|c_k\right|^2}{||\psi||^2}$ & $ w(a_k) = \sum_{i=1}^{d_k} \frac{\left|c^i_k\right|^2}{||\psi||^2}$ & \multicolumn{1}{c|}{$\rho(a) =  \frac{\left| c(a) \right|^2}{||\psi||^2} $} & $P_{a_k} = \ket{a_k}\bra{a_k} $ \\
+    \cline{3-5} \\ \hline
 \end{tabular}
 
 \noindent Per trovare una base di autovettori comuni (sapendo già che gli operatori commutano, e se entrambi hanno degenerazioni):
