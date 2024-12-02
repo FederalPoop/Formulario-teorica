@@ -88,10 +88,17 @@
     \cline{3-3}
     \multicolumn{2}{l|}{$\rho_{pn}(t) = \bra{u_p}\rho(t)\ket{u_n} = \bar{c}_n(t)c_p(t) $} & \multicolumn{1}{c|}{Oscillatore armonico} & $Tr(\rho(t)) = 1 $ & \multicolumn{1}{c|}{$i\hbar\frac{\mathrm{d}\rho(t)}{\mathrm{d}t} = [H(t), \rho(t)] $} & $a^\dagger\ket{n} = \sqrt{n+1}\ket{n+1} $ \\
     \cline{1-2} \cline{4-5}
-     & \multicolumn{1}{c|}{} & $H = \hbar\omega\left(N+\frac{1}{2}\right) $ & $\hat{X} := \sqrt{\frac{m\omega}{\hbar}}X $ & $a = \ngrt{2}(\hat{X}+i\hat{P}) $ & $[a, a^\dagger] = 1 $ \\
-     & \multicolumn{1}{c|}{} & $N = a^\dagger a $ & $\hat{P} := \ngrt{m\hbar\omega}P $ & $a^\dagger = \ngrt{2}(\hat{X}-i\hat{P}) $ & $[N, a^\dagger] = a^\dagger $ \\
-     & \multicolumn{1}{c|}{} & \multicolumn{3}{r}{$u_n(x) = \left[\frac{1}{n!2^n}\left(\frac{\hbar}{m\omega}\right)^n\right]^\frac{1}{2} \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}\left[\frac{m\omega}{\hbar}x-\frac{\mathrm{d}}{\mathrm{d}x}\right]^n e^{-\frac{m\omega}{\hbar}\frac{x^2}{2}} $} & $[N, a] = -a $ \\
+    \multicolumn{2}{c|}{Condizioni al contorno buche di potenziale} & $H = \hbar\omega\left(N+\frac{1}{2}\right) $ & $\hat{X} := \sqrt{\frac{m\omega}{\hbar}}X $ & $a = \ngrt{2}(\hat{X}+i\hat{P}) $ & $[a, a^\dagger] = 1 $ \\
+    Continuità di $\psi$ & \multicolumn{1}{c|}{Continuità di $\psi' $} & $N = a^\dagger a $ & $\hat{P} := \ngrt{m\hbar\omega}P $ & $a^\dagger = \ngrt{2}(\hat{X}-i\hat{P}) $ & $[N, a^\dagger] = a^\dagger $ \\
+    nelle discontinuità di V & \multicolumn{1}{c|}{nelle discontinuità \textbf{finite} di V} & \multicolumn{3}{r}{$u_n(x) = \left[\frac{1}{n!2^n}\left(\frac{\hbar}{m\omega}\right)^n\right]^\frac{1}{2} \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}\left[\frac{m\omega}{\hbar}x-\frac{\mathrm{d}}{\mathrm{d}x}\right]^n e^{-\frac{m\omega}{\hbar}\frac{x^2}{2}} $} & $[N, a] = -a $ \\
     \cline{3-6}
+    \multicolumn{2}{c|}{Soluzioni buche di potenziale ($A, B \in \mathbb{C}$)} \\
+    \cline{3-3}
+    $E > V: $ & $E = V $ & \multicolumn{1}{c|}{$E < V $} \\
+    $\psi(x) = Ae^{ikx} + Be^{-ikx} $ & $\psi(x) = A + Bx $ & \multicolumn{1}{c|}{$\psi(x) = Ae^{\rho x} + Be^{-\rho x} $} \\
+    \cline{2-2}
+    \multicolumn{1}{c|}{$k := \sqrt{\frac{2m(E-V)}{\hbar^2}} $} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$\rho := \sqrt{\frac{2m(V-E)}{\hbar^2}} $} \\
+    \cline{1-1} \cline{3-3}
 \end{tabular}
 
 \newpage \newpage
