@@ -55,27 +55,49 @@
     \cline{3-5} \\ \hline
 \end{tabular}
 
-\noindent Per trovare una base di autovettori comuni (sapendo già che gli operatori commutano, e se entrambi hanno degenerazioni):
-\begin{enumerate}
-    \item Trovo autovalori e autovettori di $A$ e $B$;
-    \item Autovettori associati ad autovalori \textbf{non} degeneri sono automaticamente autovettori comuni;
-    \item Per autovettori associati ad autovalori degeneri, faccio la prova (applico $B$ a un autovettore degenere di $A$);
-    \item Se è anche autovettore di $B$, sono a posto (è autovettore comune);
-    \item Se non lo è:
+\begin{minipage}{0.798\linewidth}
+    \noindent Per trovare una base di autovettori comuni (sapendo già che gli operatori commutano, e se entrambi hanno degenerazioni):
     \begin{enumerate}
-        \item Definisco un nuovo vettore come combinazione lineare degli autovettori della base dell'autospazio degenere in questione;
-        \item Impongo che questo nuovo vettore sia autovettore di $B$;
-        \item Risolvo il sistema di equazioni trovando i coefficienti della combinazione lineare;
-        \item Per come è stato definito, questo vettore è autovettore sia di $A$ che di $B$.
+        \item Trovo autovalori e autovettori di $A$ e $B$;
+        \item Autovettori associati ad autovalori \textbf{non} degeneri sono automaticamente autovettori comuni;
+        \item Per autovettori associati ad autovalori degeneri, faccio la prova (applico $B$ a un autovettore degenere di $A$);
+        \item Se è anche autovettore di $B$, sono a posto (è autovettore comune);
+        \item Se non lo è:
+        \begin{enumerate}
+            \item Definisco un nuovo vettore come combinazione lineare degli autovettori della base dell'autospazio degenere in questione;
+            \item Impongo che questo nuovo vettore sia autovettore di $B$;
+            \item Risolvo il sistema di equazioni trovando i coefficienti della combinazione lineare;
+            \item Per come è stato definito, questo vettore è autovettore sia di $A$ che di $B$.
+        \end{enumerate}
     \end{enumerate}
-\end{enumerate}
 
-\noindent Per capire se un insieme di osservabili compatibili costituisce un ICOC:
-\begin{enumerate}
-    \item Se gli osservabili sono compatibili, esiste una base comune di autovettori;
-    \item A ogni autovettore, associo una \textit{label} costituita da una lista dei corrispondenti autovalori per ogni osservabile;
-    \item Se \textbf{ogni} \textit{label} è unica, l'insieme è un ICOC.
-\end{enumerate}
+    \noindent Per capire se un insieme di osservabili compatibili costituisce un ICOC:
+    \begin{enumerate}
+        \item Se gli osservabili sono compatibili, esiste una base comune di autovettori;
+        \item A ogni autovettore, associo una \textit{label} costituita da una lista dei corrispondenti autovalori per ogni osservabile;
+        \item Se \textbf{ogni} \textit{label} è unica, l'insieme è un ICOC.
+    \end{enumerate}
+\end{minipage}
+\hfill
+\begin{minipage}{0.173\linewidth}
+    \begin{tabular}{|c}
+        Matrici di Pauli \\
+        $\sigma_x = \left(\begin{matrix}
+            0 & 1 \\
+            1 & 0
+        \end{matrix}\right) $ \\
+        $\sigma_y = \left(\begin{matrix}
+            0 & -i \\
+            i & 0
+        \end{matrix}\right) $ \\
+        $\sigma_z = \left(\begin{matrix}
+            1 & 0 \\
+            0 & -1
+        \end{matrix}\right) $ \\ \hline
+        Spin \\
+        $\Vec{S} = \frac{\hbar}{2}\Vec{\sigma} $ \\ \hline
+    \end{tabular}
+\end{minipage}
 
 \noindent
 \begin{tabular}{cccccc}
@@ -89,8 +111,8 @@
     \multicolumn{2}{l|}{$\rho_{pn}(t) = \bra{u_p}\rho(t)\ket{u_n} = \bar{c}_n(t)c_p(t) $} & \multicolumn{1}{c|}{Oscillatore armonico} & $Tr(\rho(t)) = 1 $ & \multicolumn{1}{c|}{$i\hbar\frac{\mathrm{d}\rho(t)}{\mathrm{d}t} = [H(t), \rho(t)] $} & $a^\dagger\ket{n} = \sqrt{n+1}\ket{n+1} $ \\
     \cline{1-2} \cline{4-5}
     \multicolumn{2}{c|}{Condizioni al contorno buche di potenziale} & $H = \hbar\omega\left(N+\frac{1}{2}\right) $ & $\hat{X} := \sqrt{\frac{m\omega}{\hbar}}X $ & $a = \ngrt{2}(\hat{X}+i\hat{P}) $ & $[a, a^\dagger] = 1 $ \\
-    Continuità di $\psi$ & \multicolumn{1}{c|}{Continuità di $\psi' $} & $N = a^\dagger a $ & $\hat{P} := \ngrt{m\hbar\omega}P $ & $a^\dagger = \ngrt{2}(\hat{X}-i\hat{P}) $ & $[N, a^\dagger] = a^\dagger $ \\
-    nelle discontinuità di V & \multicolumn{1}{c|}{nelle discontinuità \textbf{finite} di V} & \multicolumn{3}{r}{$u_n(x) = \left[\frac{1}{n!2^n}\left(\frac{\hbar}{m\omega}\right)^n\right]^\frac{1}{2} \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}\left[\frac{m\omega}{\hbar}x-\frac{\mathrm{d}}{\mathrm{d}x}\right]^n e^{-\frac{m\omega}{\hbar}\frac{x^2}{2}} $} & $[N, a] = -a $ \\
+    Continuità di $\psi$ nelle & \multicolumn{1}{c|}{Continuità di $\psi' $ nelle} & $N = a^\dagger a $ & $\hat{P} := \ngrt{m\hbar\omega}P $ & $a^\dagger = \ngrt{2}(\hat{X}-i\hat{P}) $ & $[N, a^\dagger] = a^\dagger $ \\
+    discontinuità di V & \multicolumn{1}{c|}{discontinuità \textbf{finite} di V} & \multicolumn{3}{r}{$u_n(x) = \left[\frac{1}{n!2^n}\left(\frac{\hbar}{m\omega}\right)^n\right]^\frac{1}{2} \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}\left[\frac{m\omega}{\hbar}x-\frac{\mathrm{d}}{\mathrm{d}x}\right]^n e^{-\frac{m\omega}{\hbar}\frac{x^2}{2}} $} & $[N, a] = -a $ \\
     \cline{3-6}
     \multicolumn{2}{c|}{Soluzioni buche di potenziale ($A, B \in \mathbb{C}$)} \\
     \cline{3-3}
