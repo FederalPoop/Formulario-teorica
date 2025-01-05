@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{tabularx}
+\usepackage{multirow}
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -93,7 +94,10 @@
         $\sigma_z = \left(\begin{matrix}
             1 & 0 \\
             0 & -1
-        \end{matrix}\right) $ \\ \hline
+        \end{matrix}\right) $ \\ 
+        $\sigma_x^2 = \sigma_y^2 = \sigma_z^2 = $ \\
+        $= -i\sigma_x\sigma_y\sigma_z = \id $ \\
+        $\sigma_i\sigma_j = \delta_ij + i\epsilon_{ijk}\sigma_k $ \\ \hline
         Spin \\
         $\Vec{S} = \frac{\hbar}{2}\Vec{\sigma} $ \\ \hline
         Trasformazione unitaria \\
@@ -116,13 +120,14 @@
     Continuità di $\psi$ nelle & \multicolumn{1}{c|}{Continuità di $\psi' $ nelle} & $N = a^\dagger a $ & $\hat{P} := \ngrt{m\hbar\omega}P $ & $a^\dagger = \ngrt{2}(\hat{X}-i\hat{P}) $ & $[N, a^\dagger] = a^\dagger $ \\
     discontinuità di V & \multicolumn{1}{c|}{discontinuità \textbf{finite} di V} & \multicolumn{3}{r}{$u_n(x) = \left[\frac{1}{n!2^n}\left(\frac{\hbar}{m\omega}\right)^n\right]^\frac{1}{2} \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}\left[\frac{m\omega}{\hbar}x-\frac{\mathrm{d}}{\mathrm{d}x}\right]^n e^{-\frac{m\omega}{\hbar}\frac{x^2}{2}} $} & $[N, a] = -a $ \\
     \cline{3-6}
-    \multicolumn{2}{c|}{Soluzioni buche di potenziale ($A, B \in \mathbb{C}$)} \\
+    \multicolumn{2}{c|}{Soluzioni buche di potenziale ($A, B \in \mathbb{C}$)} & Metodo perturbativo & \multicolumn{3}{l}{$E_n^{(1)} = \bra{n^{(0)}}\hat{W}\ket{n^{(0)}}\qquad \ket{n^{(1)}} = -\sum_{k\neq n} \frac{\bra{k^{(0)}}\hat{W}\ket{n^{(0)}}}{E_k^{(0)} - E_n^{(0)}}\ket{k^{(0)}} $} \\
     \cline{3-3}
-    $E > V: $ & $E = V $ & \multicolumn{1}{c|}{$E < V $} \\
+    $E > V: $ & $E = V $ & \multicolumn{1}{c|}{$E < V $} & \multicolumn{3}{c}{\multirow{3}{200pt}{$E_n^{(2)} = \bra{n^{(0)}}\hat{W}\ket{n^{(1)}} = -\sum_{k\neq n} \frac{\left|\bra{k^{(0)}}\hat{W}\ket{n^{(0)}}\right|^2}{E_k^{(0)} - E_n^{(0)}} $}} \\
     $\psi(x) = Ae^{ikx} + Be^{-ikx} $ & $\psi(x) = A + Bx $ & \multicolumn{1}{c|}{$\psi(x) = Ae^{\rho x} + Be^{-\rho x} $} \\
     \cline{2-2}
-    \multicolumn{1}{c|}{$k := \sqrt{\frac{2m(E-V)}{\hbar^2}} $} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$\rho := \sqrt{\frac{2m(V-E)}{\hbar^2}} $} \\
-    \cline{1-1} \cline{3-3}
+    \multicolumn{1}{c|}{$k := \sqrt{\frac{2m(E-V)}{\hbar^2}} $} & \multicolumn{1}{c|}{Operatori diff in coord sferiche} & \multicolumn{1}{c|}{$\rho := \sqrt{\frac{2m(V-E)}{\hbar^2}} $} \\
+    \cline{1-1} \cline{3-6}
+    
 \end{tabular}
 
 \newpage \newpage
