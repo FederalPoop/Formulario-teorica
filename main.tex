@@ -113,7 +113,7 @@
 \begin{tabular}{*{6}{c}}
     \hline
     Equazione di Schrödinger & \multicolumn{1}{c|}{Visuale di Schrödinger} & Equazione di Heisenberg & \multicolumn{2}{c|}{Visuale di Heisenberg} & Sistema conservativo \\
-    $ -i\hbar\frac{\mathrm{d}}{\mathrm{d}t}\ket{\psi(t)} = H(t)\ket{\psi(t)} $ & \multicolumn{1}{c|}{$\begin{cases}\ket{\psi(t)}_S = U(\Delta t) \ket{\psi(t_0)}_S \\ A_S (t) = A_S (0) \end{cases} $} & $ i\hbar\frac{\mathrm{d}}{\mathrm{d}t}A_H(t) = [A_H, H] $ & \multicolumn{2}{c|}{$\begin{cases}\ket{\psi(t)}_H = \ket{\psi(t_0)}_H \\ A_H(t) = U^\dagger(\Delta t)A_H(t_0)U(\Delta t) \end{cases} $} & $ U(t,t_0) = e^{-\frac{i}{\hbar}H(t-t_0)} $ \\
+    $ -i\hbar\frac{\mathrm{d}}{\mathrm{d}t}\ket{\psi(t)} = H(t)\ket{\psi(t)} $ & \multicolumn{1}{c|}{$\begin{cases}\ket{\psi(t)}_S = U(\Delta t) \ket{\psi(t_0)}_S \\ A_S (t) = A_S (t_0) \end{cases} $} & $ i\hbar\frac{\mathrm{d}}{\mathrm{d}t}A_H(t) = [A_H, H_H] $ & \multicolumn{2}{c|}{$\begin{cases}\ket{\psi(t)}_H = \ket{\psi(t_0)}_H \\ A_H(t) = U^\dagger(\Delta t)A_H(t_0)U(\Delta t) \end{cases} $} & $ U(t,t_0) = e^{-\frac{i}{\hbar}H(t-t_0)} $ \\
     \hline
     Matrice densità & Stato puro & Stato misto & \multicolumn{2}{c|}{Proprietà generali} & $N\ket{n} = n\ket{n} $ \\
     $\rho(t) = \ket{\psi(t)}\bra{\psi(t)} $ & $\rho^2(t) = \rho(t) $ & $\rho(t) = \sum_k p_k\rho_k(t) $ & $\rho^\dagger(t) = \rho(t) $ & \multicolumn{1}{c|}{$\langle A \rangle_\psi(t) = Tr(\rho(t) A) $} & $a\ket{n} = \sqrt{n}\ket{n-1} $ \\
@@ -135,6 +135,13 @@
     \cline{3-3}
     $J_\pm J_\mp = J^2 - J_z(J_z \mp \hbar) $ & \multicolumn{1}{c|}{$J_zJ_\pm = J_\pm(J_z \pm \hbar) $} & \multicolumn{1}{c|}{} & \multicolumn{3}{c}{al primo ordine del'autovalore degenere)} \\
     \cline{1-2} \cline{4-6}
+\end{tabular}
+
+\subsection*{Meccanica classica}
+
+\begin{tabular}{*{2}{c}}
+    Equazioni di Lagrange & Equazioni di Hamilton \\
+    $\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\partial L}{\partial \dot{q}_i}\right) = \frac{\partial L}{\partial q_i} $ & $\dot{q}_i = \frac{\partial H}{\partial p_i};\ \dot{p}_i = -\frac{\partial H}{\partial q_i} $ \\
 \end{tabular}
 
 \section*{Roba matematica}
