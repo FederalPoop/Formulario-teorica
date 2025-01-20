@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1737370862.90492 "/home/federalpoop/Scrivania/Università/Studio/Fisica teorica/Formulario teorica/main.tex" "formulario.pdf" "formulario" 1737370863.30441 0
+["pdflatex"] 1737383934.66924 "/home/federalpoop/Scrivania/Università/Studio/Fisica teorica/Formulario teorica/main.tex" "formulario.pdf" "formulario" 1737383935.10589 0
   "/etc/texmf/web2c/texmf.cnf" 1730212085.7155 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/federalpoop/Scrivania/Università/Studio/Fisica teorica/Formulario teorica/main.tex" 1737370862.71397 18485 0a0653dafec041ce7328fde483224947 ""
+  "/home/federalpoop/Scrivania/Università/Studio/Fisica teorica/Formulario teorica/main.tex" 1737383934.46348 18654 a77b74df061854fc94ae4718b24531fe ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -84,8 +84,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1730217357.53632 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1730217431 8213870 b2c56c01b39136e1db9670880a3b1c92 ""
-  "file_ausiliari/formulario.aux" 1737370863.25598 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "main.tex" 1737370862.71397 18485 0a0653dafec041ce7328fde483224947 ""
+  "file_ausiliari/formulario.aux" 1737383935.05547 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1737383934.46348 18654 a77b74df061854fc94ae4718b24531fe ""
   (generated)
   "file_ausiliari/formulario.aux"
   "file_ausiliari/formulario.log"
