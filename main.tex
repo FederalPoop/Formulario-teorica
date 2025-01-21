@@ -122,7 +122,7 @@
     \cline{1-2} \cline{4-5}
     \multicolumn{2}{c|}{Condizioni al contorno buche di potenziale} & $H = \hbar\omega\left(N+\frac{1}{2}\right) $ & $\hat{X} := \sqrt{\frac{m\omega}{\hbar}}X $ & $a = \ngrt{2}(\hat{X}+i\hat{P}) $ & $[a, a^\dagger] = 1 $ \\
     Continuità di $\psi$ nelle & \multicolumn{1}{c|}{Continuità di $\psi' $ nelle} & $N = a^\dagger a $ & $\hat{P} := \ngrt{m\hbar\omega}P $ & $a^\dagger = \ngrt{2}(\hat{X}-i\hat{P}) $ & $[N, a^\dagger] = a^\dagger $ \\
-    discontinuità di V & \multicolumn{1}{c|}{discontinuità \textbf{finite} di V} & \multicolumn{3}{r}{$u_n(x) = \left[\frac{1}{n!2^n}\left(\frac{\hbar}{m\omega}\right)^n\right]^\frac{1}{2} \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}\left[\frac{m\omega}{\hbar}x-\frac{\mathrm{d}}{\mathrm{d}x}\right]^n e^{-\frac{m\omega}{\hbar}\frac{x^2}{2}} $} & $[N, a] = -a $ \\
+    discontinuità di V & \multicolumn{1}{c|}{discontinuità \textbf{finite} di V} & \multicolumn{3}{r}{$\varphi_n(x) = \left[\frac{1}{n!2^n}\left(\frac{\hbar}{m\omega}\right)^n\right]^\frac{1}{2} \left(\frac{m\omega}{\pi\hbar}\right)^\frac{1}{4}\left[\frac{m\omega}{\hbar}x-\frac{\mathrm{d}}{\mathrm{d}x}\right]^n e^{-\frac{m\omega}{\hbar}\frac{x^2}{2}} $} & $[N, a] = -a $ \\
     \cline{3-6}
     \multicolumn{2}{c|}{Soluzioni buche di potenziale 1D ($A, B \in \mathbb{C}$, $0<x<a $)} & Metodo perturbativo & \multicolumn{3}{l}{\multirow{3}{235pt}{$E_n^{(1)} = \bra{n^{(0)}}\hat{W}\ket{n^{(0)}};\ \ket{n^{(1)}} = -\sum_{k\neq n} \frac{\bra{k^{(0)}}\hat{W}\ket{n^{(0)}}}{E_k^{(0)} - E_n^{(0)}}\ket{k^{(0)}} $}} \\
     \cline{3-3}
@@ -139,16 +139,22 @@
     \multicolumn{5}{c|}{$\psi(\vec{x}_1,\vec{x}_2) = \frac{1}{\sqrt{2}[1+\delta_{mn}(\sqrt{2}-1)]}\left(\psi_m(\vec{x}_1)\psi_n(\vec{x}_2) + \psi_n(\vec{x}_1)\psi_m(\vec{x}_2)\right)\qquad \psi(\vec{x}_1,\vec{x}_2) = \frac{1}{\sqrt{2}}\left(\psi_m(\vec{x}_1)\psi_n(\vec{x}_2) - \psi_n(\vec{x}_1)\psi_m(\vec{x}_2)\right) $} & $[L_i,X_j] = i\hbar\varepsilon_{ijk}X_k $ \\
     \multicolumn{2}{l}{Bosoni si trovano in stati simmetrici di spin} & \multicolumn{3}{r|}{Fermioni si trovano in stati antisimmetrici di spin} & $[L_i,P_j] = i\hbar\varepsilon_{ijk}P_k $ \\
     \hline
-    \multicolumn{2}{c|}{Buca di potenziale infinita 1D $\left(-\frac{L}{2} < x < \frac{L}{2}\right) $} & & & \multicolumn{1}{c|}{} & Derivata di $U $ \\
+    \multicolumn{2}{c|}{Buca di potenziale infinita 1D $\left(-\frac{L}{2} < x < \frac{L}{2}\right) $} & Scattering & \multicolumn{2}{c|}{$\varphi(\vec{r}) = \varphi_0(\vec{r}) + \int \mathrm{d}^3r' G(\vec{r}-\vec{r}')U(\vec{r}\,')\varphi(\vec{r}\,') $} & Derivata di $U $ \\
     \multicolumn{2}{c|}{\multirow{4}{*}{$\psi_n(x) = \begin{cases}
         \sqrt{\frac{2}{L}}\cos\left(\frac{n\pi x}{L}\right) & \mathrm{per\ } n\ \mathrm{dispari} \\
         \sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right) & \mathrm{per\ } n\ \mathrm{pari}
-    \end{cases}\quad E_n = \frac{\hbar^2\pi^2n^2}{2ma^2} $}} & & & \multicolumn{1}{c|}{} & $\frac{\mathrm{d}U}{\mathrm{d}t} \propto HU $ \\
+    \end{cases}\quad E_n = \frac{\hbar^2\pi^2n^2}{2ma^2} $}} & \multicolumn{2}{c}{$\varphi_k^{diff} \sim e^{ikz} + f_k(\vartheta,\varphi)\frac{e^{ikr}}{r} $ per $\vec{r}\rightarrow\infty $} & \multicolumn{1}{c|}{$\frac{\mathrm{d}\sigma}{\mathrm{d}\Omega} = \left|f_k(\vartheta,\varphi)\right|^2 $} & $\frac{\mathrm{d}U}{\mathrm{d}t} \propto HU $ \\
     \cline{6-6}
-    \multicolumn{2}{c|}{}\\
-    \multicolumn{2}{c|}{}\\
-    \multicolumn{2}{c|}{}\\
-    \cline{1-2}
+    \multicolumn{2}{c|}{} & \multicolumn{2}{c}{$f_k(\vartheta,\varphi) = -\frac{1}{4\pi}\int\mathrm{d}^3r' e^{-ik\hat{r}\cdot\vec{r}\,'}U(\vec{r}\,')\varphi(\vec{r}') $} & \multicolumn{2}{c}{Potenziale centrale ($k := \left|k_{diff}\right| = \left|k_{inc}\right| $)} \\
+    \multicolumn{2}{c|}{} & Approssimazione di Born & $\vec{K} := \vec{k}_{diff} - \vec{k}_{inc} $ & \multicolumn{2}{c}{$f_k^B = -\frac{i\mu}{\hbar^2k}\int_{0}^{\infty}\mathrm{d}r\, rV(r)\left(e^{-2ikr}-1 \right) $} \\
+    \multicolumn{2}{c|}{} & \multicolumn{2}{c}{$f_k^B(\vartheta,\varphi) = -\frac{1}{4\pi}\int\mathrm{d}^3r e^{-i\vec{K}\cdot\vec{r}}U(\vec{r});\ U = \frac{2\mu}{\hbar^2}V $} & \multicolumn{2}{c}{(funziona anche se diverso da quello del prof)} \\
+    \hline
+    Sistema di 2 particelle & $\vec{r} = \vec{r}_1 - \vec{r}_2\qquad \vec{P} = \vec{P}_1 + \vec{P}_2 $ & \multicolumn{1}{c|}{$H = \frac{\vec{P}^2}{2M} + \frac{\vec{p}\,^2}{2\mu} + V(r) $} & \multicolumn{2}{c}{$\psi(\vec{r}) = R_{nl}(r)Y_l^m(\vartheta,\varphi)\,\ \ R_{nl}(r) = \frac{u_{nl}(r)}{r} $} & $u_{n,l} = e^{-\frac{\rho}{n}}y_{nl} $ \\
+    \cline{3-3}
+    $\vec{R} = \frac{m_1\vec{R}_1 + m_2\vec{R}_2}{m_1+m_2} $ & \multicolumn{1}{c|}{$\vec{p} = \frac{m_2\vec{P}_1 - m_1\vec{P}_2}{m_1+m_2} $} & Atomo di idrogeno & \multicolumn{3}{c}{$y_{k,l} = \sum_q^{k-1}c_q\rho^{q+l+1}\qquad n = k+l \qquad \frac{c_q}{c_{q-1}} = -\frac{2(k-q)}{q(q+2l+1)(k+l)} $} \\
+    \cline{1-4}
+     & & & \multicolumn{1}{c|}{} & $\rho = \frac{r}{a_0}\ \ a_0 = \frac{\hbar^2}{\mu e^2} $ & $E_I = \frac{\mu e^4}{2\hbar^2}\ E_n = \frac{E_I}{n^2} $ \\
+    \cline{5-6}
 \end{tabular}
 
 \subsection*{Meccanica classica}
@@ -158,20 +164,23 @@
     $\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}_i}\right) = \frac{\partial \mathcal{L}}{\partial q_i} $ & $\dot{q}_i = \frac{\partial H}{\partial p_i};\ \dot{p}_i = -\frac{\partial H}{\partial q_i} $ \\
 \end{tabular}
 
+\newpage
 \section*{Roba matematica}
 
-\begin{tabular}{*{5}{c}}
-    \multicolumn{1}{c|}{Error function} & \multicolumn{2}{c|}{Integrale di Seno ($n\in \mathbb{N}\setminus\{0\} $)} & \multicolumn{1}{c|}{Commutatori cancri} & {Prodotto misto} \\
-    \multicolumn{1}{c|}{$erf(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\mathrm{d}t $} & \multicolumn{2}{c|}{\multirow{4}{205pt}{$I_n(a) = \int_0^\infty x^ne^{-ax^2}\mathrm{d}x = \begin{cases}\frac{(n-1)!!}{2^{\frac{n}{2}+1}}\sqrt{\frac{\pi}{a^{n+1}}} & \mathrm{n\ pari} \\ \frac{(\frac{n-1}{2})!}{2a^{\frac{n+1}{2}}} & \mathrm{n\ dispari} \end{cases} $}} & \multicolumn{1}{c|}{$[A,BC] = [A,B]C + B[A,C] $} & {$\vec{a}\cdot(\vec{b}\times \vec{c}) = \vec{b}\cdot(\vec{c}\times \vec{a}) = \vec{c}\cdot(\vec{a}\times \vec{b})$} \\
+\begin{tabular}{*{7}{c}}
+    \multicolumn{1}{c|}{Error function} & \multicolumn{4}{c|}{Integrale di Seno ($n\in \mathbb{N}\setminus\{0\} $)} & \multicolumn{1}{c|}{Commutatori cancri} & {Prodotto misto} \\
+    \multicolumn{1}{c|}{$erf(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\mathrm{d}t $} & \multicolumn{4}{c|}{\multirow{4}{205pt}{$I_n(a) = \int_0^\infty x^ne^{-ax^2}\mathrm{d}x = \begin{cases}\frac{(n-1)!!}{2^{\frac{n}{2}+1}}\sqrt{\frac{\pi}{a^{n+1}}} & \mathrm{n\ pari} \\ \frac{(\frac{n-1}{2})!}{2a^{\frac{n+1}{2}}} & \mathrm{n\ dispari} \end{cases} $}} & \multicolumn{1}{c|}{$[A,BC] = [A,B]C + B[A,C] $} & {$\vec{a}\cdot(\vec{b}\times \vec{c}) = \vec{b}\cdot(\vec{c}\times \vec{a}) = \vec{c}\cdot(\vec{a}\times \vec{b})$} \\
     \cline{1-1}
-    \multicolumn{1}{c|}{Polinomi di Hermite} & \multicolumn{2}{c|}{} & \multicolumn{1}{c|}{$[AB,C] = A[B,C] + [A,C]B$} & {$\vec{a}\times (\vec{b}\times \vec{c}) = \vec{b}(\vec{a}\cdot \vec{c}) - \vec{c}(\vec{a}\cdot \vec{b})$} \\
-    \multicolumn{1}{c|}{$H_n(z) = (-)^n e^{z^2}\frac{\mathrm{d}^n}{\mathrm{d}z^n} e^{-z^2} $} & \multicolumn{2}{c|}{} & \multicolumn{1}{c|}{$[AB,CD] = A[B,C]D + AC[B,D] + $} & {$(\vec{a}\times \vec{b})\times \vec{c} = \vec{b}(\vec{c}\cdot \vec{a}) - \vec{a}(\vec{b}\cdot \vec{c}) $} \\
-    \cline{5-5}
-    \multicolumn{1}{c|}{$ = \left(2z-\frac{d}{dz}\right)H_{n-1}(z) $} & \multicolumn{2}{c|}{} & \multicolumn{1}{c|}{$+ [A,C]DB + C[A,D]B $} & Goniometria marastoniana \\
-    \cline{1-4}
-    \multicolumn{1}{c|}{Formule Eulero} & \multicolumn{1}{c|}{Integrale di D'Eramo} & \multicolumn{2}{c|}{Integrale utile ($n,m \in \mathbb{Z} \setminus\{0\} $)} & $\sin^2 \theta = \frac{1-\cos 2\theta}{2} $ \\
-    \multicolumn{1}{c|}{$\sin\theta = \frac{e^{i\theta}-e^{-i\theta}}{2i} $} & \multicolumn{1}{c|}{$\int_\mathbb{R} \mathrm{d}x\, e^{-\alpha x^2 + \beta x} = \frac{\sqrt{\pi}}{\alpha}e^{\frac{\beta^2}{4\alpha}} $} & \multicolumn{2}{c|}{$\int_0^1 \mathrm{d}z\, \sin^2(n\pi z)\sin^2(m\pi z) = \frac{1}{4}\left(1+\frac{1}{2}\delta_{mn}\right) $} & $\cos^2 \theta = \frac{1+\cos 2\theta}{2} $ \\
-    \cline{2-5}
+    \multicolumn{1}{c|}{Polinomi di Hermite} & \multicolumn{4}{c|}{} & \multicolumn{1}{c|}{$[AB,C] = A[B,C] + [A,C]B$} & {$\vec{a}\times (\vec{b}\times \vec{c}) = \vec{b}(\vec{a}\cdot \vec{c}) - \vec{c}(\vec{a}\cdot \vec{b})$} \\
+    \multicolumn{1}{c|}{$H_n(z) = (-)^n e^{z^2}\frac{\mathrm{d}^n}{\mathrm{d}z^n} e^{-z^2} $} & \multicolumn{4}{c|}{} & \multicolumn{1}{c|}{$[AB,CD] = A[B,C]D + AC[B,D] + $} & {$(\vec{a}\times \vec{b})\times \vec{c} = \vec{b}(\vec{c}\cdot \vec{a}) - \vec{a}(\vec{b}\cdot \vec{c}) $} \\
+    \cline{7-7}
+    \multicolumn{1}{c|}{$ = \left(2z-\frac{d}{dz}\right)H_{n-1}(z) $} & \multicolumn{4}{c|}{} & \multicolumn{1}{c|}{$+ [A,C]DB + C[A,D]B $} & Goniometria marastoniana \\
+    \cline{2-6}
+    \multicolumn{3}{c|}{Autofunzioni oscillatore armonico} & \multicolumn{1}{c|}{Integrale di D'Eramo} & \multicolumn{2}{c|}{Integrale utile ($n,m \in \mathbb{Z} \setminus\{0\} $)} & $\sin^2 \theta = \frac{1-\cos 2\theta}{2} $ \\
+    \multicolumn{3}{c|}{$\varphi_n(x) = \left(\frac{m\omega}{\pi\hbar} \right)^\frac{1}{4} \frac{1}{\sqrt{2^n n!}} H_n\left(\sqrt{\frac{m\omega}{\hbar}}x \right)e^{-\frac{m\omega}{2\hbar}x^2} $} & \multicolumn{1}{c|}{$\int_\mathbb{R} \mathrm{d}x\, e^{-\alpha x^2 + \beta x} = \frac{\sqrt{\pi}}{\alpha}e^{\frac{\beta^2}{4\alpha}} $} & \multicolumn{2}{c|}{$\int_0^1 \mathrm{d}z\, \sin^2(n\pi z)\sin^2(m\pi z) = \frac{1}{4}\left(1+\frac{1}{2}\delta_{mn}\right) $} & $\cos^2 \theta = \frac{1+\cos 2\theta}{2} $ \\
+    \hline
+    \multicolumn{1}{c|}{Formule Eulero} \\
+    \multicolumn{1}{c|}{$\sin\theta = \frac{e^{i\theta}-e^{-i\theta}}{2i} $} \\
     \multicolumn{1}{c|}{$\cos\theta = \frac{e^{i\theta}+e^{-i\theta}}{2} $} \\
     \cline{1-1}
 \end{tabular}
